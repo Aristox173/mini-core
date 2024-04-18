@@ -1,12 +1,16 @@
 import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  apiKey: "AIzaSyBeLjTGdGexlT-tKT7G8KIqPjwvIBJXg9c",
+  authDomain: "mini-core-20030.firebaseapp.com",
+  projectId: "mini-core-20030",
+  storageBucket: "mini-core-20030.appspot.com",
+  messagingSenderId: "133066522722",
+  appId: "1:133066522722:web:75e4e9a37a622d7a71513b",
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore();
+
+export { db, collection, getDocs };
