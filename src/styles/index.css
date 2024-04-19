@@ -28,13 +28,17 @@ button {
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-/* Adjustments for date picker */
 .react-datepicker-wrapper {
   display: inline-block;
 }
@@ -44,7 +48,7 @@ button:hover {
 }
 
 .react-datepicker-popper {
-  z-index: 1; /* Ensure date picker popper is above everything */
+  z-index: 1;
 }
 
 .container-ventas {

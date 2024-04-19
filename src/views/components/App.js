@@ -128,7 +128,8 @@ function App() {
         {result.map((res, index) => (
           <div key={index}>
             <label>Vendedor: {res.Vendedor}</label>
-            <label>Monto Vendido: {res.CuotaMonto}</label>
+            <br></br>
+            <label> Monto Vendido: {res.CuotaMonto}</label>
           </div>
         ))}
       </div>

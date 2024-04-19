@@ -1,4 +1,4 @@
-import { db, collection, getDocs } from "./firebase/firebase.js";
+import { db, collection, getDocs } from "../models/firebase/firebase.js";
 
 async function getUsers() {
   try {
